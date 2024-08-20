@@ -1,7 +1,6 @@
 # useful_scripts
 
-** **
-### /batch/
+### /batch
 
 [nodejs_install.bat](https://github.com/JimmyGaubert/useful_scripts/blob/main/batch/nodejs_install.bat) - Install nodejs on windows
 

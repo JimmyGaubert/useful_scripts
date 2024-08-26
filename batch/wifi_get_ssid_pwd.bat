@@ -14,7 +14,7 @@ if "%ssid%"=="" (
         ) else (
             cls
             call netsh wlan show profiles name="!profile!" key=clear | findstr /i "interface Wi-Fi"
-            call netsh wlan show profiles name="!profile!" key=clear | findstr /i "Contenu" | for /f "tokens=2 delims=:" %%B in ('findstr /r /c:"Contenu"') do @echo %%B
+            call netsh wlan show profiles name="!profile!" key=clear | findstr /i "Contenu" | for /f "tokens=1* delims=:" %%B in ('findstr /r /c:"Contenu"') do @echo %%C
         )
     )
     pause >nul
